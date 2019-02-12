@@ -4,7 +4,7 @@ const router = require('./service')
 const cors = require('cors');
 
 var app = express()
-app.options('*', cors());
+app.options('*', cors())
 app.use(bodyParser.json())
 app.use(
   bodyParser.urlencoded({
@@ -18,4 +18,4 @@ app.get('/', function(req, res){
 
 app.use('/Users', router)
 
-app.listen(3000);
+app.listen(3000)
